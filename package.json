@@ -1,6 +1,6 @@
 {
   "name": "promisegate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Limits promise concurrency",
   "main": "index.js",
   "scripts": {
