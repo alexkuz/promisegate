@@ -5,7 +5,7 @@ Takes `(args...) -> Promise` and turns it into `(args...) -> Promise` with limit
 Useful for capping expensive async calls (e.g. image processing).  
 Arguments are proxied to the wrapped function.
 
-Assumes your promise library of choice defines `.resolve` and `.defer`.
+Assumes your promise library of choice defines `.resolve`, `.defer` and `.finally`.
 
 ```javascript
 var Promise = require('bluebird');
