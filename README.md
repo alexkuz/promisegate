@@ -1,0 +1,4 @@
+promisegate
+===========
+
+Limits promise concurrency
