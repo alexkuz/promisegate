@@ -26,13 +26,15 @@ module.exports = function (Promise) {
         .then(scheduleNextJob, scheduleNextJob);
     }
 
-    function processScheduledJobs() {
+    function processScheduledJobs(res) {
       running--;
 
       if (semaphore && running < concurrency) {
         semaphore.resolve();
         semaphore = null;
       }
+      
+      return res;
     }
 
     return function () {
